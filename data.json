@@ -1,0 +1,111 @@
+{
+    "deck": [
+        8,
+        6,
+        6,
+        8,
+        7,
+        10,
+        14,
+        16,
+        2,
+        13,
+        5,
+        15,
+        7,
+        9,
+        2,
+        2,
+        5,
+        6,
+        1,
+        13,
+        1,
+        9,
+        9,
+        17,
+        4,
+        10,
+        11,
+        4,
+        1,
+        11,
+        16,
+        12,
+        5,
+        10,
+        8,
+        14,
+        14,
+        3,
+        3,
+        6
+    ],
+    "players": [
+        {
+            "id": 0,
+            "name": "omar",
+            "token": 9971,
+            "cards": [
+                9,
+                11,
+                5,
+                7
+            ],
+            "score": []
+        },
+        {
+            "id": 1,
+            "name": "fouda",
+            "token": 9271,
+            "cards": [
+                4,
+                4,
+                3,
+                1
+            ],
+            "score": []
+        },
+        {
+            "id": 0,
+            "name": "som3a",
+            "token": 1971,
+            "cards": [
+                14,
+                17,
+                10,
+                3
+            ],
+            "score": []
+        },
+        {
+            "id": 0,
+            "name": "amar",
+            "token": 9941,
+            "cards": [
+                11,
+                12,
+                7,
+                8
+            ],
+            "score": []
+        }
+    ],
+    "lastThrown": 2,
+    "thrown": [],
+    "turn": 1,
+    "started": false,
+    "mode": "play",
+    "screw": -1,
+    "active": -1,
+    "activeStep": -1,
+    "reveal": {
+        "to": -1,
+        "from": -1
+    },
+    "drawn": -1,
+    "drawThrow": false,
+    "subCard": -1,
+    "action": "before",
+    "startDate": ""
+}

@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url('assets/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.credit {
+    position: absolute;
+    display: inline-block;
+    bottom: 50px;
+    left: 50px;
+    opacity: 0.5;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+canvas {
+    display: block;
+}
+canvas.hide {
+    display: none;
+}
+.main {
+    width: 550px;
+    padding: 10px 20px 40px;
+    background-color: #000a;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.main.hide {
+    display: none;
+}
+.main > div.hide {
+    display: none;
+}
+.main .enter .row {
+    display: flex;
+    gap: 7px;
+    margin-top: 20px;
+    align-items: stretch;
+}
+.main input {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    background-color: #fff2;
+    border-bottom: 2px solid #48dbfb;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+.main input.danger {
+    border-bottom: 2px solid red;
+}
+.main input::placeholder {
+    color: #ddd;
+}
+.main span {
+    color: #d63031;
+    font-size: 1.1rem;
+    margin: 5px 0 0 5px;
+    display: none;
+}
+.main span.show {
+    display: inline-block;
+}
+.main button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.3rem;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.main .connect button {
+    margin-top: 10px;
+}
+
+.main .h {
+    color: #fff;
+}
+
+.loading {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff2;
+}
+
+.loading.hide {
+    display: none;
+}
+
+.exit {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff2;
+    z-index: 5;
+    color: #fff;
+}
+.exit.hide {
+    display: none;
+}
+.exit .container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    padding: 0 20px 20px;
+    text-align: center;
+}
+.exit .container .q {
+    font-size: 1.3rem;
+}
+.exit .container .btns {
+    display: flex;
+    gap: 10px;
+}
+.exit .container .btns .button {
+    flex: 1;
+    display: inline-block;
+    padding: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+}
+.exit .container .btns .button.yes {
+    background-color: #e74c3c;
+}
+.exit .container .btns .button.yes:hover {
+    background-color: #c0392b;
+}
+.exit .container .btns .button.no {
+    background-color: #2ecc71;
+}
+.exit .container .btns .button.no:hover {
+    background-color: #27ae60;
+}
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .mobile .text {
+        color: #fff;
+        text-align: center;
+        z-index: 2;
+        position: absolute;
+        top: 50%;
+        font-size: 2rem;
+        transform: translateY(-50%);
+    }
+    .mobile:before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgb(0,0,55);
+        background: radial-gradient(circle, rgba(0,0,55,1) 71%, rgba(1,0,82,1) 85%);
+    }
+    .main {
+        display: none;
+    }
+    canvas {
+        display: none;
+    }
+
+}

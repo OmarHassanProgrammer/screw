@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screw</title>
+    <link rel="stylesheet" type="text/css" href="styles3.css">
+</head>
+<body>
+    <div class="mobile">
+        <div class="text">This game isn't allowed for your device, play it on pc or wait until its release on Play Store.</div>
+    </div>
+    <div class="exit hide">
+        <div class="container">            
+            <h3 class="q">
+                Are you sure you want to exit this room?
+            </h3>
+            <div class="btns">
+                <button class="button yes">Yes</button>
+                <button class="button no">No</button>
+            </div>
+        </div>  
+    </div>
+    <span class="credit">Developed by: Omar Hassan El fatayry</span>
+    <div class="main" id="main">
+        <div class="connect">
+            <h2 class="h">Enter your name to connect to server: </h2>
+            <input id="input" placeholder="Name"/>
+            <span id="error">Please enter a name</span>
+            <button id="btn">Connect to server</button>
+        </div>
+        <div class="enter hide">
+            <h2 class="h">Create or join a room to play with your friends: </h2>
+            <div class="row create">
+                <input id="input" placeholder="Room Password"/>
+                <button id="btn">Create a room</button>
+            </div>
+            <div class="row join">
+                <input id="input" placeholder="Room Password"/>
+                <button id="btn">Join a room</button>
+            </div>
+        </div>
+    </div>
+    <div class="loading hide">
+        
+    </div>
+    <canvas id="myCanvas"></canvas>
+    <script src="load2.js"></script>
+    <script src="scripts5.js"></script>
+</body>
+</html>
